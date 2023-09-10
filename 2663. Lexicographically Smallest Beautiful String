@@ -1,0 +1,29 @@
+result = ""
+    forbidden = set()
+    i = 0
+
+    while i < len(s):
+        result += s[i]
+        if len(result) >= 2:
+            forbidden.add(result[-2:])
+        i += 1
+
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    j = 0
+
+    while j < k - 1:
+        for char in alphabet:
+            candidate = result + char
+            if candidate[-2:] not in forbidden:
+                result = candidate
+                j += 1
+                break
+
+    while len(result) < len(s):
+        for char in alphabet:
+            candidate = result + char
+            if candidate[-2:] not in forbidden:
+                result = candidate
+                break
+
+    return result if len(result) == len(s) else ""
