@@ -1,0 +1,20 @@
+def rotate(nums, k):
+    # Calculate the effective rotation value
+    k = k % len(nums)
+    
+    # Create a new array to store the rotated values
+    rotated_nums = [0] * len(nums)
+    
+    # Iterate through nums and place each element in its rotated position
+    for i in range(len(nums)):
+        rotated_nums[(i + k) % len(nums)] = nums[i]
+    
+    # Copy the rotated values back to nums
+    for i in range(len(nums)):
+        nums[i] = rotated_nums[i]
+
+# Example usage:
+nums = [1, 2, 3, 4, 5, 6, 7]
+k = 3
+rotate(nums, k)
+print(nums)  # Output: [5, 6, 7, 1, 2, 3, 4]
