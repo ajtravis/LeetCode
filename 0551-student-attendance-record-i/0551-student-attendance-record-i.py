@@ -1,0 +1,27 @@
+class Solution:
+    def checkRecord(self, s: str) -> bool:
+        absences = 0
+        consecutive_late = 0
+
+        # Iterate through the attendance record
+        for char in s:
+            if char == 'A':
+                # If the student is absent, increment the absences count
+                absences += 1
+                # If the absences count reaches 2 or more, return False
+                if absences >= 2:
+                    return False
+                # Reset the consecutive late days count
+                consecutive_late = 0
+            elif char == 'L':
+                # If the student is late, increment the consecutive late days count
+                consecutive_late += 1
+                # If the consecutive late days count reaches 3 or more, return False
+                if consecutive_late >= 3:
+                    return False
+            else:
+                # If the student is present, reset the consecutive late days count
+                consecutive_late = 0
+
+        # If all checks passed, the student is eligible for an award
+        return True
