@@ -1,0 +1,16 @@
+def minFlipsMonoIncr(s):
+    # Initialize variables to keep track of 1s and flips
+    ones_count = 0
+    flips = 0
+    
+    # Iterate through the string
+    for char in s:
+        if char == '0':
+            # If we encounter a '0', we have two options:
+            # 1. Increment the number of flips by 1 (flipping it to '1')
+            # 2. Leave it as '0'
+            # We choose the option that minimizes flips
+            flips = min(flips + 1, ones_count)
+        else:
+            # If we encounter a '1', we simply increment the number of 1s
+            ones_count += 1
