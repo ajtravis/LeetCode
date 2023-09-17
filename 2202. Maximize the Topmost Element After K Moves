@@ -1,0 +1,27 @@
+import heapq
+
+def maxPile(nums, k):
+    # Create a min-heap to represent the pile
+    heap = nums[:]
+    heapq.heapify(heap)
+
+    while k > 0:
+        if not heap:
+            # If the heap is empty and we can't add elements, return -1
+            return -1
+
+        # Get the current topmost element
+        top = heapq.heappop(heap)
+
+        if k == 1:
+            # If there's only one move left, add back the topmost element
+            heapq.heappush(heap, top)
+            return top
+
+        # If there are more than one move left, add back an element
+        # (you can add any element from the removed elements)
+        # to maximize the topmost element
+        heapq.heappush(heap, top + 1)
+        k -= 1
+
+    return heapq.heappop(heap)  # Return the maximum value
