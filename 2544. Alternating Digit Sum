@@ -1,0 +1,15 @@
+def signedDigitSum(n):
+    n_str = str(n)
+    result = 0
+    positive = True  # Start with a positive sign for the most significant digit
+
+    for digit in n_str:
+        if positive:
+            result += int(digit)
+        else:
+            result -= int(digit)
+        
+        # Toggle the sign for the next digit
+        positive = not positive
+    
+    return result
