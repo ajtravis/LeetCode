@@ -1,0 +1,36 @@
+def connectTwoGroups(cost):
+    size1 = len(cost)
+    size2 = len(cost[0])
+    
+    # Create a memoization table to store minimum costs
+    memo = [[-1] * (size2 + 1) for _ in range(size1 + 1)]
+    
+    def dp(i, j):
+        if memo[i][j] != -1:
+            return memo[i][j]
+        
+        if i == size1 and j == size2:
+            # Both groups are connected, no cost
+            return 0
+        
+        min_cost = float('inf')
+        
+        # Connect a point from the first group to a point in the second group
+        if i < size1:
+            for k in range(size2):
+                min_cost = min(min_cost, cost[i][k] + dp(i + 1, j))
+        
+        # Connect a point from the second group to a point in the first group
+        if j < size2:
+            for k in range(size1):
+                min_cost = min(min_cost, cost[k][j] + dp(i, j + 1))
+        
+        memo[i][j] = min_cost
+        return min_cost
+    
+    return dp(0, 0)
+
+# Example usage:
+cost = [[15, 96], [36, 2]]
+result = connectTwoGroups(cost)
+print(result)  # This will print the minimum cost to connect the two groups
