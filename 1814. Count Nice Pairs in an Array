@@ -1,0 +1,21 @@
+def countNicePairs(nums):
+    mod = 10**9 + 7
+    count = {}
+    nice_pairs = 0
+
+    for num in nums:
+        reversed_num = int(str(num)[::-1])
+        diff = num - reversed_num
+
+        if diff in count:
+            nice_pairs += count[diff]
+        
+        count[diff] = count.get(diff, 0) + 1
+
+    return nice_pairs % mod
+
+# Example usage:
+nums1 = [42, 11, 1, 97]
+nums2 = [13, 10, 35, 24, 76]
+print(countNicePairs(nums1))  # Output: 2
+print(countNicePairs(nums2))  # Output: 4
