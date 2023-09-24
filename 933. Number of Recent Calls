@@ -1,0 +1,22 @@
+from collections import deque
+
+class RecentCounter:
+
+    def __init__(self):
+        self.requests = deque()
+
+    def ping(self, t: int) -> int:
+        # Remove requests older than t - 3000
+        while self.requests and self.requests[0] < t - 3000:
+            self.requests.popleft()
+        
+        # Add the current request and return the count
+        self.requests.append(t)
+        return len(self.requests)
+
+# Example usage:
+recentCounter = RecentCounter()
+print(recentCounter.ping(1))     # Output: 1
+print(recentCounter.ping(100))   # Output: 2
+print(recentCounter.ping(3001))  # Output: 3
+print(recentCounter.ping(3002))  # Output: 3
