@@ -1,0 +1,40 @@
+def threeSumMulti(arr, target):
+    MOD = 10**9 + 7
+    arr.sort()
+    count = 0
+
+    for i in range(len(arr) - 2):
+        j, k = i + 1, len(arr) - 1
+
+        while j < k:
+            total = arr[i] + arr[j] + arr[k]
+
+            if total == target:
+                # Count the number of occurrences of arr[j] and arr[k]
+                left_count, right_count = 1, 1
+
+                while j + 1 < k and arr[j] == arr[j + 1]:
+                    left_count += 1
+                    j += 1
+
+                while j < k - 1 and arr[k] == arr[k - 1]:
+                    right_count += 1
+                    k -= 1
+
+                # Calculate the total number of combinations with left_count and right_count
+                if arr[j] == arr[k]:
+                    count += (left_count * (left_count - 1) // 2) % MOD
+                else:
+                    count += (left_count * right_count) % MOD
+
+                j += 1
+                k -= 1
+
+            elif total < target:
+                j += 1
+            else:
+                k -= 1
+
+    return count % MOD
+
+
