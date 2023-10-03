@@ -7,8 +7,8 @@ class Solution:
             j = len(s) - 1
             while j >= 0:
                 dif = j - i
-                if (dif) <= length:
-                    break
+                # if (dif) <= length:
+                #     break
                 if s[i] == s[j] and (dif - 1) > length:
                     length = dif - 1
                 j -= 1
