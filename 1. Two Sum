@@ -1,0 +1,24 @@
+def twoSum(nums, target):
+    # Create a dictionary to store the indices of elements we've seen
+    seen = {}
+
+    for i, num in enumerate(nums):
+        # Calculate the complement needed to reach the target
+        complement = target - num
+        
+        # Check if the complement is in the dictionary
+        if complement in seen:
+            # Return the indices of the two numbers
+            return [seen[complement], i]
+        
+        # If the complement is not in the dictionary, store the current number and its index
+        seen[num] = i
+    
+    # If there is no solution, return an empty list or raise an exception
+    return []
+
+# Example usage:
+nums = [2, 7, 11, 15]
+target = 9
+result = twoSum(nums, target)
+print(result)  # Output will be [0, 1] since nums[0] + nums[1] = 2 + 7 = 9
