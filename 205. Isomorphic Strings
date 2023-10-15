@@ -1,0 +1,24 @@
+def maxNumOfPairs(words):
+    word_dict = {}  # Dictionary to store words and their reversed forms
+    pairs = 0  # Initialize the count of pairs
+
+    for word in words:
+        reversed_word = word[::-1]
+
+        if reversed_word in word_dict and word_dict[reversed_word] > 0:
+            pairs += 1
+            word_dict[reversed_word] -= 1
+        else:
+            word_dict[word] = word_dict.get(word, 0) + 1
+
+    return pairs
+
+# Example usage:
+words1 = ["cd", "ac", "dc", "ca", "zz"]
+print(maxNumOfPairs(words1))  # Output: 2
+
+words2 = ["ab", "ba", "cc"]
+print(maxNumOfPairs(words2))  # Output: 1
+
+words3 = ["aa", "ab"]
+print(maxNumOfPairs(words3))  # Output: 0
