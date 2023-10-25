@@ -1,0 +1,24 @@
+class Solution:
+    def minMaxGame(self, nums: List[int]) -> int:
+        def evenHelper(x):
+            even = min(nums[2 * x], nums[2 * x + 1])
+            return even
+
+        def oddHelper(x):
+            odd = max(nums[2 * x], nums[2 * x + 1])
+            return odd
+
+        def chooser(x):
+            if x == 0 or x%2 == 0:
+                return evenHelper(x)
+            else:
+                return oddHelper(x)
+
+        n = len(nums)
+
+        if n == 1:
+            return int(nums[0])
+
+        k = int(n/2)
+        newNums = [chooser(i) for i in range(k)]
+        return self.minMaxGame(newNums)
