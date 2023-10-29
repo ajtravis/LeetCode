@@ -4,13 +4,8 @@ class Solution:
     
     def findTheArrayConcVal(self, nums):
         n = len(nums)
-        if n == 0:
-            result = Solution.cv
-            Solution.cv = 0
-            return result
-        elif n == 1:
+        if n == 1:
             Solution.cv += nums[0]
-            print(nums[0], Solution.cv)
             result = Solution.cv
             Solution.cv = 0
             return result
@@ -19,7 +14,6 @@ class Solution:
             num2 = str(nums[-1])
             conc = int(num1 + num2)
             Solution.cv += conc
-            print(num1, num2, Solution.cv, conc)
             result = Solution.cv
             Solution.cv = 0
             return result
@@ -28,6 +22,5 @@ class Solution:
             num2 = str(nums[-1])
             conc = int(num1 + num2)
             Solution.cv += conc
-            print(num1, num2, Solution.cv, conc)
             new_nums = nums[1:-1]
             return self.findTheArrayConcVal(new_nums)
