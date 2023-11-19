@@ -1,0 +1,9 @@
+def numOfWaysToReorder(nums):
+    MOD = 10**9 + 7
+
+    def count_ways(subarray):
+        if len(subarray) <= 1:
+            return 1
+
+        root = subarray[0]
+        left_subarray = [x for x in subarray if
