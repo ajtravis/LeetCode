@@ -1,0 +1,22 @@
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        used = set()
+        i = 0;
+        cur = nums
+        length = len(cur)
+        while i <= length:
+            
+                break
+            if cur[i] in used:
+                cur = nums[0:i] + cur[i+1:]
+                length = len(cur)
+                print('1',cur, i, cur[i], used )
+            else:
+                used.add(cur[i])
+                
+                print('2',cur, i, cur[i], used)
+            i+= 1
+        nums = cur 
+        k = len(nums)
+        
+        return k
