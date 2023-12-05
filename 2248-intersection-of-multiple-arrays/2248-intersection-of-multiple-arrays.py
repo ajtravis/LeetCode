@@ -11,8 +11,8 @@ class Solution:
             j = 0
             flag = 0
             while j < len(nums):
-                # if j == index:
-                #     j+=1
+                if j == index and j+1 < len(nums):
+                    j+=1
                 if n not in nums[j]:
                     flag = 1
                     break
