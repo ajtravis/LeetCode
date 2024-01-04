@@ -1,0 +1,27 @@
+class Solution:
+    def sortByBits(self, arr: List[int]) -> List[int]:
+        result = []
+        def count_ones(n):
+            bin_n = bin(n)
+            s = str(bin(n))
+            print(s.count('1'))
+            return s.count('1')
+        counts = {}
+        for ele in arr:
+            ones = count_ones(ele)
+            if ones not in counts.keys():
+                counts[ones] = [ele]
+            else:
+                counts[ones].append(ele)
+        
+        t = list(counts.keys())
+        t.sort()
+        print(counts,t)
+        for x in t:
+            nums = counts[x]
+            nums.sort()
+            
+           
+            for n in nums:
+                result.append(n)
+        return result
