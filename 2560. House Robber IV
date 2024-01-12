@@ -1,0 +1,51 @@
+lass Solution {
+public:
+typedef long long ll;
+#define vi(x) vector<x>
+typedef pair<ll, ll> pi;
+bool possible(const vi(int)&v, ll in, const ll&k){
+    ll tot=1;
+    bool take=false;
+    for(ll i=in-1;i>-1;--i){
+        if(!take){
+            take=1;
+            continue;
+        }
+        if(v[i]<=v[in]){
+            tot++;
+            take=0;
+        }
+    }
+    take=false;
+    for(ll i=in+1;i<v.size();++i){
+        if(!take){
+            take=1;
+            continue;
+        }
+        if(v[i]<=v[in]){
+            tot++;
+            take=0;
+        }
+    }
+    return (tot>=k);
+}
+
+int minCapability(vector<int>&v, int k) {
+    ll n=v.size(), ans=-1, l=0, r=n-1;
+    vi(pi)arr(n);
+    for(ll i=0;i<n;++i){
+        arr[i]={v[i], i};
+    }
+    sort(begin(arr), end(arr));
+    while(l<=r){
+        ll m=l+((r-l)>>1);
+        if(possible(v, arr[m].second, k)){
+            ans=arr[m].first, r=m-1;
+        }
+        else{
+            l=m+1;
+        }
+    }
+    return ans;
+}
+};
