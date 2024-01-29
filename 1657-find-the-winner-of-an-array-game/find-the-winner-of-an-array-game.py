@@ -3,8 +3,8 @@ class Solution:
         i = 0
         high = max(arr)
         while i < k:
-            if k > len(arr):
-                return high
+            if arr[0] == high:
+                return arr[0]
             if arr[0] > arr[1]:
                 low = arr.pop(1)
                 arr.append(low)
