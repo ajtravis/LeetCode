@@ -1,26 +1,25 @@
 class Solution:
     def intersection(self, nums: List[List[int]]) -> List[int]:
-        lengths = [len(x) for x in nums]
-        minL = min(lengths)
-        index = lengths.index(minL)
-        small = nums[index]
-        result = []
+        print(len(nums))
+        if len(nums) == 1:
+            nums[0].sort()
+            return nums[0]
+        common = []
         i = 0
-        while i < len(small):
-            n = small[i]
-            j = 0
-            flag = 0
+        while i < len(nums[0]):
+            c = nums[0][i]
+            j = 1
             while j < len(nums):
-                if j == index and j+1 < len(nums):
-                    j+=1
-                if n not in nums[j]:
-                    flag = 1
+                
+                if c not in nums[j]:
                     break
+                elif j == len(nums) - 1:
+                    common.append(c)
+                    print(c)
                 j+=1
-            if flag == 0:
-                result.append(n)
             i+=1
-        result.sort()
-        return result
+        common.sort()
+        return common
+                    
+                
             
-        
