@@ -1,6 +1,5 @@
 class Solution:
     def intersection(self, nums: List[List[int]]) -> List[int]:
-        print(len(nums))
         if len(nums) == 1:
             nums[0].sort()
             return nums[0]
@@ -15,7 +14,6 @@ class Solution:
                     break
                 elif j == len(nums) - 1:
                     common.append(c)
-                    print(c)
                 j+=1
             i+=1
         common.sort()
