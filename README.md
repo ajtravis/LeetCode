@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0981-delete-columns-to-make-sorted](https://github.com/ajtravis/LeetCode/tree/master/0981-delete-columns-to-make-sorted) |
 | [2454-largest-local-values-in-a-matrix](https://github.com/ajtravis/LeetCode/tree/master/2454-largest-local-values-in-a-matrix) |
 ## Matrix
 |  |
@@ -14,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0981-delete-columns-to-make-sorted](https://github.com/ajtravis/LeetCode/tree/master/0981-delete-columns-to-make-sorted) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/ajtravis/LeetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Stack
 |  |
