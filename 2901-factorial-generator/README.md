@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/factorial-generator">2901. Factorial Generator</a></h2><h3>Easy</h3><hr><p>Write a generator function that takes an integer <code>n</code> as an argument and returns a generator object which yields the <strong>factorial sequence</strong>.</p>
+<h2><a href="https://leetcode.com/problems/factorial-generator">Factorial Generator</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Write a generator function that takes an integer <code>n</code> as an argument and returns a generator object which yields the <strong>factorial sequence</strong>.</p>
 
 <p>The&nbsp;<strong>factorial sequence</strong>&nbsp;is defined by the relation <code>n!&nbsp;= n *&nbsp;<span style="font-size: 13px;">(</span>n-1)&nbsp;* (n-2)&nbsp;*&nbsp;...&nbsp;* 2 * 1​​​.</code></p>
 
