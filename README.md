@@ -28,6 +28,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2684-determine-the-winner-of-a-bowling-game](https://github.com/ajtravis/LeetCode/tree/master/2684-determine-the-winner-of-a-bowling-game) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/ajtravis/LeetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
+| [3625-stone-removal-game](https://github.com/ajtravis/LeetCode/tree/master/3625-stone-removal-game) |
 ## Greedy
 |  |
 | ------- |
@@ -40,4 +41,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/ajtravis/LeetCode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
+## Math
+|  |
+| ------- |
+| [3625-stone-removal-game](https://github.com/ajtravis/LeetCode/tree/master/3625-stone-removal-game) |
 <!---LeetCode Topics End-->
