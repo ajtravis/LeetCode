@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/ajtravis/LeetCode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2454-largest-local-values-in-a-matrix](https://github.com/ajtravis/LeetCode/tree/master/2454-largest-local-values-in-a-matrix) |
 | [2684-determine-the-winner-of-a-bowling-game](https://github.com/ajtravis/LeetCode/tree/master/2684-determine-the-winner-of-a-bowling-game) |
+| [3799-unique-3-digit-even-numbers](https://github.com/ajtravis/LeetCode/tree/master/3799-unique-3-digit-even-numbers) |
 ## Matrix
 |  |
 | ------- |
@@ -47,4 +48,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3625-stone-removal-game](https://github.com/ajtravis/LeetCode/tree/master/3625-stone-removal-game) |
+## Hash Table
+|  |
+| ------- |
+| [3799-unique-3-digit-even-numbers](https://github.com/ajtravis/LeetCode/tree/master/3799-unique-3-digit-even-numbers) |
+## Recursion
+|  |
+| ------- |
+| [3799-unique-3-digit-even-numbers](https://github.com/ajtravis/LeetCode/tree/master/3799-unique-3-digit-even-numbers) |
+## Enumeration
+|  |
+| ------- |
+| [3799-unique-3-digit-even-numbers](https://github.com/ajtravis/LeetCode/tree/master/3799-unique-3-digit-even-numbers) |
 <!---LeetCode Topics End-->
