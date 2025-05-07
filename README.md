@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0389-find-the-difference](https://github.com/ajtravis/LeetCode/tree/master/0389-find-the-difference) |
 | [0981-delete-columns-to-make-sorted](https://github.com/ajtravis/LeetCode/tree/master/0981-delete-columns-to-make-sorted) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/ajtravis/LeetCode/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/ajtravis/LeetCode/tree/master/2800-minimum-string-length-after-removing-substrings) |
@@ -40,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0389-find-the-difference](https://github.com/ajtravis/LeetCode/tree/master/0389-find-the-difference) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/ajtravis/LeetCode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 ## Heap (Priority Queue)
 |  |
@@ -52,6 +54,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0389-find-the-difference](https://github.com/ajtravis/LeetCode/tree/master/0389-find-the-difference) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/ajtravis/LeetCode/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [3799-unique-3-digit-even-numbers](https://github.com/ajtravis/LeetCode/tree/master/3799-unique-3-digit-even-numbers) |
 ## Recursion
@@ -62,4 +65,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3799-unique-3-digit-even-numbers](https://github.com/ajtravis/LeetCode/tree/master/3799-unique-3-digit-even-numbers) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0389-find-the-difference](https://github.com/ajtravis/LeetCode/tree/master/0389-find-the-difference) |
 <!---LeetCode Topics End-->
